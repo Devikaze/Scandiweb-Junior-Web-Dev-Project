@@ -5,7 +5,7 @@
             <button class="confirm-add-button" @click="createProduct">Add Product</button>
             <a href="/" class="cancel-button">Cancel</a>
         </div>
-        <div class="form" @submit.prevent="createProduct">
+        <div id="product_form" class="form" @submit.prevent="createProduct">
             <div class="input-group">
                 <label for="sku">SKU</label>
                 <input type="text" id="sku" v-model="sku" @blur="validateSku" />
