@@ -81,7 +81,7 @@ export default {
                 return;
             }
 
-            axios.get(`http://apidevikaze.mooo.com/api.php`, {
+            axios.get(`/api/api.php`, {
                 params: { sku: this.sku }
             })
                 .then(response => {
@@ -135,7 +135,7 @@ export default {
             const sanitizedSku = this.sanitizeInput(this.sku);
             const sanitizedName = this.sanitizeInput(this.name);
 
-            axios.post('http://apidevikaze.mooo.com/api.php', {
+            axios.post('/api/api.php', {
                 sku: sanitizedSku,
                 name: sanitizedName,
                 price: this.price,
