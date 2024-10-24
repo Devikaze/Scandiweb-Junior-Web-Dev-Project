@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar">
             <h1>Product Add</h1>
-            <button class="confirm-add-button" @click="createProduct">Add Product</button>
+            <button class="confirm-add-button" @click="createProduct">Save</button>
             <a href="/" class="cancel-button">Cancel</a>
         </div>
         <div id="product_form" class="form" @submit.prevent="createProduct">
