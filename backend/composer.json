@@ -1,0 +1,13 @@
+{
+    "name": "devikaze/backend",
+    "description": "task for scandiweb junior dev job",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Devikaze\\Backend\\": "classes/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
