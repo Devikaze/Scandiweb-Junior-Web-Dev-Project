@@ -5,6 +5,5 @@
 
 [[redirects]]
   from = "/apiAccess/*"
-  to = "http://apidevikaze.mooo.com/api.php"
+  to = "http://apidevikaze.mooo.com/:splat"
   status = 200
-  force = true
