@@ -2,7 +2,7 @@
 
   <body>
     <div class="navbar">
-      <h1 class="title">Product List</h1>
+      <h1>Product List</h1>
       <a href="/addproduct" class="add-button">Add</a>
       <button class="mass-delete-button" @click="massDelete">Mass Delete</button>
     </div>
