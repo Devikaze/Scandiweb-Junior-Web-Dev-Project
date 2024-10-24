@@ -81,7 +81,7 @@ export default {
                 return;
             }
 
-            axios.get(`http://localhost:8100/Scandiweb-Fullstack-Junior-Web-Dev-Project/backend/api.php`, {
+            axios.get(`http://apidevikaze.mooo.com/api.php`, {
                 params: { sku: this.sku }
             })
                 .then(response => {
@@ -135,7 +135,7 @@ export default {
             const sanitizedSku = this.sanitizeInput(this.sku);
             const sanitizedName = this.sanitizeInput(this.name);
 
-            axios.post('http://localhost:8100/Scandiweb-Fullstack-Junior-Web-Dev-Project/backend/api.php', {
+            axios.post('http://apidevikaze.mooo.com/api.php', {
                 sku: sanitizedSku,
                 name: sanitizedName,
                 price: this.price,

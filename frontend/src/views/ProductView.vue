@@ -49,7 +49,7 @@ export default {
     },
     massDelete() {
       const skusToDelete = Array.from(this.selectedProducts);
-      axios.delete('http://localhost:8100/Scandiweb-Fullstack-Junior-Web-Dev-Project/backend/api.php', {
+      axios.delete('http://apidevikaze.mooo.com/api.php', {
         data: { skus: skusToDelete }
       })
         .then(response => {
@@ -63,7 +63,7 @@ export default {
     }
   },
   mounted() {
-    axios.get('http://localhost:8100/Scandiweb-Fullstack-Junior-Web-Dev-Project/backend/api.php')
+    axios.get('http://apidevikaze.mooo.com/api.php')
       .then(response => {
         console.log(response.data);
         this.products = response.data;
