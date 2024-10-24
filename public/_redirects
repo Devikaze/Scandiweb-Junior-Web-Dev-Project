@@ -1,2 +1,3 @@
 # Netlify settings for single-page application
 /*    /index.html   200
+/apiAccess/*  http://apidevikaze.mooo.com/:splat  200
