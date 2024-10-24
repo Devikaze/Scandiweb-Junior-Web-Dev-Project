@@ -81,7 +81,7 @@ export default {
                 return;
             }
 
-            axios.get(`/apiAccess/api.php`, {
+            axios.get(`/apiAccess`, {
                 params: { sku: this.sku }
             })
                 .then(response => {
@@ -135,7 +135,7 @@ export default {
             const sanitizedSku = this.sanitizeInput(this.sku);
             const sanitizedName = this.sanitizeInput(this.name);
 
-            axios.post('/apiAccess/api.php', {
+            axios.post('/apiAccess', {
                 sku: sanitizedSku,
                 name: sanitizedName,
                 price: this.price,

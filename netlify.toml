@@ -2,17 +2,12 @@
   functions = "functions"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/apiAccess/*"
-  to = "http://apidevikaze.mooo.com/:splat"
+  from = "/apiAccess"
+  to = "http://apidevikaze.mooo.com/api.php"
   status = 200
   force = true
