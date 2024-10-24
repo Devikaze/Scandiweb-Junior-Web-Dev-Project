@@ -49,7 +49,7 @@ export default {
     },
     massDelete() {
       const skusToDelete = Array.from(this.selectedProducts);
-      axios.delete('/apiAccess', {
+      axios.delete('http://apidevikaze.mooo.com/api.php', {
         data: { skus: skusToDelete }
       })
         .then(response => {
@@ -63,7 +63,7 @@ export default {
     }
   },
   mounted() {
-    axios.get('/apiAccess')
+    axios.get('http://apidevikaze.mooo.com/api.php')
       .then(response => {
         console.log(response.data);
         this.products = response.data;

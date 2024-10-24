@@ -1,13 +1,10 @@
-[build]
-  functions = "functions"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "/apiAccess"
+  from = "/apiAccess/*"
   to = "http://apidevikaze.mooo.com/api.php"
   status = 200
   force = true
